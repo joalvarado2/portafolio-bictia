@@ -32,7 +32,7 @@ h1 span:nth-child(1) {
   padding: 2rem;
   background-color: black;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
 }
 a {
@@ -41,7 +41,7 @@ a {
   font-size: 1.5rem;
   font-weight: 400;
 }
-a:hover{
+a:hover {
   color: #007bff;
 }
 .nav-2 {
@@ -110,7 +110,6 @@ a:hover{
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 10rem;
 }
 .about h2 {
   color: #007bff;
@@ -182,7 +181,7 @@ button {
 }
 
 /* work and education */
-.works{
+.works {
   max-width: 90%;
   background-color: #080808;
   margin: 2rem;
@@ -190,12 +189,12 @@ button {
   border: #080808 solid 1px;
 }
 .works h5 {
-  font-size:2rem;
+  font-size: 2rem;
   margin: 2rem 0;
   color: #007bff;
   font-weight: 100;
 }
-.works p{
+.works p {
   font-size: 1.5rem;
   margin: 2rem 0;
   letter-spacing: 0.2rem;
@@ -209,36 +208,140 @@ small {
   background: #28a745;
   border-radius: 2rem;
 }
-.container-work{
+.container-work {
   background-color: #080808;
   padding-left: 2.5rem;
   margin: 2rem;
 }
-.container-skill{
+.container-skill {
   position: relative;
 }
-.absolute{
+.absolute {
   padding: 1rem;
   position: absolute;
   top: -2;
   left: 0;
   font-size: 2rem;
 }
-.i-0{
-  background-color:#007bff;
+.i-0 {
+  background-color: #007bff;
 }
-.i-1{
-  background-color:#ff5e00;
+.i-1 {
+  background-color: #ff5e00;
 }
-.i-2{
-  background-color:#02bcea;
+.i-2 {
+  background-color: #02bcea;
 }
-.i-3{
-  background-color:#8402ba;
+.i-3 {
+  background-color: #8402ba;
 }
-.i-4{
-  background-color:#28a745;
+.i-4 {
+  background-color: #28a745;
 }
-.i-5{
-  background-color:#ec014d;
+.i-5 {
+  background-color: #ec014d;
+}
+/* TESTIMONIALS */
+.referencia {
+  color: #313131;
+  font-size: 2rem;
+  text-align: center;
+}
+.testimonials {
+  border-radius: 0%;
+  border: solid black 1px;
+}
+.photo {
+  border-radius: 5rem;
+  border: 5px solid #007bff;
+  max-width: 100%;
+  width: 7rem;
+  height: 7rem;
+  margin: 0 auto;
+  align-self: center;
+  position: absolute;
+  top: 0;
+}
+Footer {
+  border: black solid 1px;
+}
+.display {
+  display: flex;
+  justify-content: space-between;
+}
+.black {
+  background: black;
+}
+.display div {
+  padding: 2rem;
+}
+.social {
+  padding: 1.5rem;
+  border-radius: 27px;
+  background: rgb(0 123 255);
+  font-size: 1.5rem;
+}
+
+/* FORMULARIO */
+.formulario {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 4rem;
+  color: #007bff;
+}
+.container-form {
+  margin-bottom: 4rem;
+}
+textarea {
+  width: 100%;
+  font-size: 2rem;
+  border: 1px solid #28a745;
+  background-color: transparent;
+  padding: 2rem;
+}
+textarea::placeholder{
+  color: #28a745;
+}
+input {
+  border: 1px solid #28a745;
+  background-color: transparent;
+  padding: 0 2rem;
+}
+input::placeholder{
+  color: #28a745;
+}
+fieldset{
+  border: #28a745 solid 1px;
+}
+legend{
+  color: #28a745;
+}
+form {
+  background-image: url("/images/imagen3.jpeg");
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+form::after {
+  content: "";
+  background-color: rgba(0, 0, 0, .7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.section-form {
+  position: relative;
+  z-index: 1;
+}
+.inputs {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.texput {
+  margin: 1rem;
 }

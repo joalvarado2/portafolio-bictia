@@ -30,16 +30,16 @@
           <div class="nav">
             <nav><a href="" class="name">Jonathan</a></nav>
             <nav class="nav-2">
-              <a href="">Home</a>
-              <a href="">About</a>
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
               <a href="">Service</a>
               <a href="">Portafolio</a>
-              <a href="">Testimonials</a>
-              <a href="">contact</a>
+              <a href="#testimonials">Testimonials</a>
+              <a href="#contact">contact</a>
             </nav>
           </div>
           <div class="container">
-            <div class="home">
+            <div id="home" class="home">
               <div class="center">
                 <div class="width">
                   <h3>WELCOME TO MY RESUME</h3>
@@ -55,11 +55,11 @@
                 </div>
                 <div class="social-media">
                   <span>Follow Me:</span>
-                  <a href=""><i class="fab fa-facebook-f"></i></a>
-                  <a href=""><i class="fab fa-twitter"></i></a>
-                  <a href=""><i class="fab fa-instagram"></i></a>
-                  <a href=""><i class="fab fa-linkedin-in"></i></a>
-                  <a href=""><i class="fab fa-github"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100008417165114" target="blank"><i class="fab fa-facebook-f"></i></a>
+                  <a href="" target="blank"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/jonathanalva92/?hl=es" target="blank"><i class="fab fa-instagram" target="blank"></i></a>
+                  <a href="https://www.linkedin.com/in/jonathan-steveen-alvarado-chac%C3%B3n-91bb35128/" target="blank"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="https://github.com/joalvarado2" target="blank"><i class="fab fa-github"></i></a>
                 </div>
               </div>
             </div>
@@ -71,7 +71,7 @@
       <section>
         <div class="section-2">
           <div class="dad-about">
-            <div class="about">
+            <div id="about" class="about">
               <h2>About Me</h2>
               <b></b>
             </div>
@@ -88,19 +88,19 @@
             <div class="container-bar">
               <div class="m-bar">
                 <h5>HTML5</h5>
-                <progress class="width primary" value="20" max="100">20%</progress/>
+                <progress class="width primary" value="70" max="100">20%</progress/>
                 <h5>CSS3</h5>
-                <progress class="width progress" value="20" max="100">20%</progress/>
+                <progress class="width progress" value="70" max="100">20%</progress/>
                 <h5>JAVASCRITP</h5>
-                <progress class="width progress" value="20" max="100">20%</progress/>
+                <progress class="width progress" value="50" max="100">20%</progress/>
               </div>
               <div class="m-bar">
                 <h5>REACJS</h5>
-                <progress class="width progress" value="20" max="100">20%</progress/>
+                <progress class="width progress" value="40" max="100">20%</progress/>
                 <h5>JAVA</h5>
-                <progress class="width progress" value="20" max="100">20%</progress/>
+                <progress class="width progress" value="40" max="100">20%</progress/>
                 <h5>SQL</h5>
-                <progress class="width progress" value="20" max="100">20%</progress/>
+                <progress class="width progress" value="30" max="100">20%</progress/>
               </div>
             </div>
             <div class="button"><button>DOWNLOAD MY CV</button></div>
@@ -189,10 +189,96 @@
                 </div>
               </div>         
             </div>
+
             <div class="button"><button>DOWNLOAD MY CV</button></div>
           </div>
         </div>
       </section>
+      <section>
+        <div class="section-2">
+          <div id="testimonials" class="dad-about">
+            <div class="about">
+              <h2>Testimonials</h2>
+              <b></b>
+            </div>
+            <div class="container-bar">
+              <div class="container-skill">
+                <img src="/images/vectorial.jpg" class="photo" alt="foto">
+                <div class="works testimonials">
+                  <div class="container-work">
+                   <p>Duis at augue et leo iaculis ultricies eget ut metus. Aliquam a imperdiet justo. .
+                      Sed eu dolor vitae dolor tincidunt pulvinar id nec ligula. Sed vestibulum nibh et erat auctor, id venenatis dolor ornare. Vivamus ac efficitur dui, nec vehicula urna. Mauris quis diam fermentum, lobortis nisl bibendum,
+                      bibendum ligula. Morbi posuere vitae felis a condimentum.
+                    </p>
+                  </div> 
+                </div>
+                <h5 class="referencia">Dinana Enciso | Analista De Operaciones</h5>
+              </div>
+              <div class="container-skill">
+                <img src="/images/vectorial1.jpg" class="photo" alt="foto">
+                <div class="works testimonials">
+                  <div class="container-work">
+                   <p>Duis at augue et leo iaculis ultricies eget ut metus. Aliquam a imperdiet justo. .
+                      Sed eu dolor vitae dolor tincidunt pulvinar id nec ligula. Sed vestibulum nibh et erat auctor, id venenatis dolor ornare. Vivamus ac efficitur dui, nec vehicula urna. Mauris quis diam fermentum, lobortis nisl bibendum,
+                      bibendum ligula. Morbi posuere vitae felis a condimentum.
+                    </p>
+                  </div> 
+                </div>
+                <h5 class="referencia">Angie Alvarado | Administradora Turistica</h5>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+      <!-- FORMULARIO -->
+      <form id="contact" action="">
+        <div class="section-form">
+          <div class="dad-about">
+            <div class="about get">
+              <h2>Get In Touch</h2>
+              <b></b>
+            </div>
+            <div class="container-form">
+              <div class="formulario">
+                <fieldset>
+                  <!--Etiqueta legend-->
+                <legend>Datos personales</legend>
+                <div class="texput">
+                  <div class="inputs">
+                    <!--Etiqueta input tipo texto-->
+                    <input name='nombre' type='text' placeholder="Name" required/>
+                    <input name='email' type='email' placeholder="Email " required/>
+                    <input name='subject' type='text' placeholder="Subject" required/>
+                   </div>
+                    <!--Etiqueta textarea-->
+                    <textarea name="textarea" rows="10" cols="50" placeholder="Write Your Message"></textarea>
+                </div>
+              </fieldset>  
+            </div>
+          </div>
+          <div class="button"><button>SEED MESSAGE</button></div>
+          </div>
+        </div>
+        
+      </form>
+    <!-- FOOTER -->
+    <footer>
+      <div class="container-skill">
+        <div class="works testimonials black">
+          <div class="container-work display black">
+           <div><p>Copyright © 2021 - All Right Reserved.</p></div>
+           <div>
+               <a href="https://www.facebook.com/profile.php?id=100008417165114" target="blank"><i class="fab fa-facebook-f social"></i></a>
+               <a href="" target="blank"><i class="fab fa-twitter social"></i></a>
+               <a href="https://www.instagram.com/jonathanalva92/?hl=es" target="blank"><i class="fab fa-instagram social"></i></a>
+               <a href="https://www.linkedin.com/in/jonathan-steveen-alvarado-chac%C3%B3n-91bb35128/" target="blank"><i class="fab fa-linkedin-in social"></i></a>
+               <a href="https://github.com/joalvarado2" target="blank"><i class="fab fa-github social"></i></a>
+           </div>
+           <div><p>Designed by Jonathan Alvarado</p></div>
+          </div> 
+        </div>
+      </div>
+    </footer>
     </div>
   </body>
 </html>
