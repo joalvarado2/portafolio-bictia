@@ -46,11 +46,13 @@ a:hover {
 }
 .nav-2 {
   align-self: center;
+  text-shadow: 10px 10px 15px rgb(253, 26, 151);
 }
 .name {
   color: #007bff;
   font-size: 3rem;
   font-weight: 700;
+  text-shadow: 0px 0px 20px rgb(253, 26, 151);
 }
 .container {
   width: 100%;
