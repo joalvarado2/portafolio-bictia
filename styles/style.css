@@ -132,7 +132,7 @@ h5 {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding-bottom: 4rem; 
+  padding-bottom: 4rem;
 }
 .about h2 {
   color: var(--color);
@@ -331,39 +331,49 @@ small {
 }
 
 /* FORMULARIO */
-/* .formulario {
-  max-width: 80%;
+.formulario {
+  font-size: 30px;
+}
+.texput {
+  max-width: 95%;
   margin-left: auto;
   margin-right: auto;
-  font-size: 4rem;
-  color: #007bff;
 }
-.container-form {
-  margin-bottom: 4rem;
-}
-textarea {
-  width: 100%;
-  font-size: 2rem;
-  border: 1px solid #28a745;
-  background-color: transparent;
-  padding: 2rem;
-}
-textarea::placeholder{
-  color: #28a745;
+.inputs {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
 }
 input {
-  border: 1px solid #28a745;
+  width: 30%;
+  padding: 1rem;
+  color: #28a745;
+  border: solid #28a745 1px;
   background-color: transparent;
-  padding: 0 2rem;
 }
-input::placeholder{
+input::placeholder {
   color: #28a745;
 }
-fieldset{
+textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 17rem;
+  max-height: 24rem;
+  border: solid #28a745 1px;
+  color: #28a745;
+  background-color: transparent;
+}
+textarea::placeholder {
+  color: #28a745;
+}
+legend {
+  color: #28a745;
+}
+fieldset {
   border: #28a745 solid 1px;
-}
-legend{
-  color: #28a745;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 form {
   background-image: url("/images/imagen3.jpeg");
@@ -373,23 +383,27 @@ form {
 }
 form::after {
   content: "";
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
 }
-.section-form {
+.relative {
   position: relative;
   z-index: 1;
 }
-.inputs {
-  display: flex;
-  justify-content: space-between;
-  font-size: 2rem;
-  margin-bottom: 2rem;
+@media (min-width: 768px) {
+  textarea {
+    font-size: 2rem;
+  }
+  .formulario {
+    font-size: 8rem;
+  }
+  fieldset {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
-.texput {
-  margin: 1rem;
-} */
