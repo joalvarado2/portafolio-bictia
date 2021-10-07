@@ -3,87 +3,74 @@
   box-sizing: border-box;
   margin: 0;
   font-family: "Rubik", sans-serif;
-  color: white;
 }
-.main {
-  background-color: black;
+:root {
+  --color: #007bff;
+  /* #007bff */
 }
-img {
-  max-width: 100%;
-  width: 100%;
-  height: 100vh;
-  position: relative;
-}
-h1 span:nth-child(1) {
-  color: #007bff;
-  font-weight: 700;
-}
-.head {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #0e0d0d8f;
-}
-.nav {
+.flex {
   display: flex;
-  justify-content: space-around;
-  padding: 2rem;
+}
+/* NAVEGACION */
+.menu {
+  width: 100%;
+  align-self: center;
+  text-align: end;
+  margin: 0 0.5rem;
+}
+nav {
+  color: var(--color);
   background-color: black;
+  padding: 1rem;
+  font-size: 3rem;
   position: fixed;
   z-index: 2;
   width: 100%;
+  top: 0;
 }
-a {
-  text-decoration: none;
-  margin: 1rem;
-  font-size: 1.5rem;
-  font-weight: 400;
-}
-a:hover {
-  color: #007bff;
-}
-.nav-2 {
-  align-self: center;
-  text-shadow: 10px 10px 15px rgb(253, 26, 151);
-}
-.name {
-  color: #007bff;
+nav div:nth-child(1) {
   font-size: 3rem;
-  font-weight: 700;
-  text-shadow: 0px 0px 20px rgb(253, 26, 151);
 }
-.container {
-  width: 100%;
-  padding: 2rem;
-  max-width: 35%;
-  margin-top: 25rem;
-  margin-left: 10rem;
+nav a {
+  display: none;
+  text-decoration: none;
+  padding: 0.5rem;
+  color: white;
 }
-.skills {
-  width: auto;
-  font-size: 7rem;
+/* MEDIAS - QUERYS */
+@media (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+  nav a {
+    display: inline-block;
+    font-size: 1.5rem;
+  }
+  nav h2 {
+    font-size: 3rem;
+    font-weight: 100;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.grid {
+  font-size: 5rem;
+  margin-top: 8rem;
 }
 .home {
-  margin: 1rem;
-}
-
-.home h3 {
-  font-size: 2rem;
-  margin: 2rem 0;
-  letter-spacing: 0.3em;
-  font-weight: 100;
-}
-.home h1 {
-  font-size: 5rem;
-  margin: 2rem 0;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 1;
 }
 .bt-1,
 .bt-2,
 .bt-3 {
-  padding: 2.5rem;
-  margin: 0;
+  padding: 2rem;
+  font-size: 3rem;
 }
 .bt-1 {
   background-color: #007bff;
@@ -94,30 +81,66 @@ a:hover {
 .bt-3 {
   background-color: #f7df1d;
 }
+h1 span:nth-child(1) {
+  color: var(--color);
+  font-weight: 700;
+}
+h1,
+h3,
+h5 {
+  color: white;
+}
 .social-media {
   font-size: 2.5rem;
   margin: 0.5rem 0;
+  color: white;
 }
 .social-media i {
   font-size: 1.5rem;
+  margin: 0 1rem;
+  color: white;
 }
-.section-2 {
+.header::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.header {
+  background-image: url("/images/imagen1.jpeg");
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  border: solid transparent 1px;
+}
+/* ABOUT */
+
+.section {
+  width: 100%;
+  background-color: black;
+  padding: 5rem 0;
+}
+.about-first {
+  max-width: 90%;
   margin-left: auto;
   margin-right: auto;
-  max-width: 90%;
 }
-
-/* ABOUT */
 .about {
   width: 100%;
   display: flex;
   justify-content: center;
+  padding-bottom: 4rem; 
 }
 .about h2 {
-  color: #007bff;
+  color: var(--color);
   font-size: 4rem;
   font-weight: 700;
-  height: 90px;
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
 }
 b {
   background-image: url(http://ebaytemplate.com/thesoft/html/liam/assets/img/title-after.png);
@@ -130,42 +153,35 @@ b {
   margin-top: 10rem;
 }
 .description h3 {
-  color: #007bff;
+  color: var(--color);
   font-size: 2.3rem;
   text-align: center;
-}
-.dad-about {
-  padding: 5rem;
 }
 .description {
   width: 100%;
   height: 50%;
   margin-top: 5rem;
   letter-spacing: 0.2rem;
+  text-align: center;
 }
 .description p {
   margin: 2rem;
   line-height: 1.5;
   font-size: 1.6rem;
+  color: white;
 }
 .description h5 {
   font-size: 1.8rem;
   color: #313131;
   text-align: center;
 }
-.container-bar {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+/* BARRAS */
+.bars {
   padding: 2rem;
   font-size: 3rem;
 }
-
-/* BARRAS DE PROGRESO */
 .m-bar {
-  margin: 1rem;
-}
-.width {
-  width: 100%;
+  margin: 2rem 0;
 }
 .button {
   display: flex;
@@ -181,8 +197,29 @@ button {
   cursor: pointer;
   border-radius: 3rem;
 }
-
-/* work and education */
+progress {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .bars {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .m-bar {
+    margin: 1rem;
+  }
+}
+/* WORKS AND EDUCATION */
+.container-bar {
+  font-size: 3rem;
+  color: white;
+}
+@media (min-width: 768px) {
+  .container-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
 .works {
   max-width: 90%;
   background-color: #080808;
@@ -193,11 +230,12 @@ button {
 .works h5 {
   font-size: 2rem;
   margin: 2rem 0;
-  color: #007bff;
+  color: var(--color);
   font-weight: 100;
 }
 .works p {
   font-size: 1.5rem;
+  font-weight: 100;
   margin: 2rem 0;
   letter-spacing: 0.2rem;
 }
@@ -211,14 +249,13 @@ small {
   border-radius: 2rem;
 }
 .container-work {
-  background-color: #080808;
-  padding-left: 2.5rem;
+  padding-left: 1.5rem;
   margin: 2rem;
 }
 .container-skill {
   position: relative;
 }
-.absolute {
+.skill {
   padding: 1rem;
   position: absolute;
   top: -2;
@@ -255,7 +292,7 @@ small {
 }
 .photo {
   border-radius: 5rem;
-  border: 5px solid #007bff;
+  border: 5px solid var(--color);
   max-width: 100%;
   width: 7rem;
   height: 7rem;
@@ -264,28 +301,37 @@ small {
   position: absolute;
   top: 0;
 }
-Footer {
-  border: black solid 1px;
+/* FOOTER */
+.container-footer {
+  width: 100%;
+  background-color: black;
 }
-.display {
-  display: flex;
-  justify-content: space-between;
+@media (min-width: 768px) {
+  .display {
+    display: flex;
+    justify-content: space-between;
+  }
 }
-.black {
-  background: black;
+.black p {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
 }
 .display div {
-  padding: 2rem;
+  padding: 1.5rem;
+  align-self: center;
 }
 .social {
   padding: 1.5rem;
   border-radius: 27px;
-  background: rgb(0 123 255);
+  background: var(--color);
   font-size: 1.5rem;
+  margin: 0 0.5rem;
+  color: white;
 }
 
 /* FORMULARIO */
-.formulario {
+/* .formulario {
   max-width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -346,4 +392,4 @@ form::after {
 }
 .texput {
   margin: 1rem;
-}
+} */
