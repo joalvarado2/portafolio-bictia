@@ -7,5 +7,7 @@ El código muestra un boceto de un témplate ya con un diseño elaborado y total
 ## ¿Que sigue?
 bueno el objetivo de este repositorio es hacerlo dinamico y poder agregar algunos pequeños proyectos que he realizado de manera educativa con ayudas de la libreria de **javascript** llamada** Reactjs**, asi mismo poder agregar e implementar proyectos en el franmework **Angularjs** ambos bajo el entorno MERN y MEAN.
 
+**Para visualizar el proyecto por favor consultar [Aquí](http://portafolio-joalvarado2.netlify.app/ "Aquí"):tw-1f603: :tw-1f60a: :tw-1f609:
+
 ##contacto
 Para sugerir o solicitar cualquier información pueden hacer enviándome un mensaje  [Aquí](http://api.whatsapp.com/send?phone=3504677423 "Aquí")
