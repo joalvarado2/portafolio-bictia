@@ -6,7 +6,9 @@
 }
 :root {
   --color: #007bff;
+  --color2:#28a745 ;
   /* #007bff */
+  /* #28a745 */
 }
 .flex {
   display: flex;
@@ -187,8 +189,9 @@ b {
   display: flex;
   justify-content: center;
 }
+.button a,
 button {
-  background-color: #28a745;
+  background-color: var(--color2);
   text-decoration: none;
   border: none;
   padding: 1rem 1.5rem;
@@ -245,7 +248,7 @@ small {
   font-weight: 500;
   font-size: 1rem;
   letter-spacing: 0.5px;
-  background: #28a745;
+  background: var(--color2);
   border-radius: 2rem;
 }
 .container-work {
@@ -347,30 +350,30 @@ small {
 input {
   width: 30%;
   padding: 1rem;
-  color: #28a745;
-  border: solid #28a745 1px;
+  color: var(--color2);
+  border: solid var(--color2) 1px;
   background-color: transparent;
 }
 input::placeholder {
-  color: #28a745;
+  color: var(--color2);
 }
 textarea {
   min-width: 100%;
   max-width: 100%;
   min-height: 17rem;
   max-height: 24rem;
-  border: solid #28a745 1px;
-  color: #28a745;
+  border: solid var(--color2) 1px;
+  color: var(--color2);
   background-color: transparent;
 }
 textarea::placeholder {
-  color: #28a745;
+  color: var(--color2);
 }
 legend {
-  color: #28a745;
+  color: var(--color2);
 }
 fieldset {
-  border: #28a745 solid 1px;
+  border: var(--color2) solid 1px;
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
