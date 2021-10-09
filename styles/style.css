@@ -12,6 +12,7 @@
 }
 .flex {
   display: flex;
+  padding-bottom: 1rem;
 }
 /* NAVEGACION */
 .menu {
@@ -34,19 +35,24 @@ nav div:nth-child(1) {
   font-size: 3rem;
 }
 nav a {
-  display: none;
   text-decoration: none;
   padding: 0.5rem;
   color: white;
 }
+.invisible{
+  display: none;
+}
 /* MEDIAS - QUERYS */
 @media (min-width: 768px) {
+  .flex {
+   padding-bottom: 0;
+  }
   .menu {
     display: none;
   }
-  nav a {
+  .invisible{
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
   nav h2 {
     font-size: 3rem;
