@@ -24,6 +24,7 @@
 nav {
   color: var(--color);
   background-color: black;
+  text-shadow: 6px 4px 15px var(--color2);
   padding: 1rem;
   font-size: 3rem;
   position: fixed;
@@ -41,6 +42,9 @@ nav a {
 }
 .invisible{
   display: none;
+}
+.invisible a:hover{
+  color: var(--color);
 }
 /* MEDIAS - QUERYS */
 @media (min-width: 768px) {
@@ -118,7 +122,7 @@ h5 {
   bottom: 0;
 }
 .header {
-  background-image: url("/images/imagen1.jpeg");
+  background-image: url("../images/imagen1.jpeg");
   background-size: cover;
   background-position: center center;
   height: 100vh;
@@ -385,7 +389,7 @@ fieldset {
   margin-right: auto;
 }
 form {
-  background-image: url("/images/imagen3.jpeg");
+  background-image: url("../images/imagen3.jpeg");
   background-size: cover;
   background-position: center center;
   position: relative;
