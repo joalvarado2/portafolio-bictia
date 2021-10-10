@@ -21,6 +21,9 @@
   text-align: end;
   margin: 0 0.5rem;
 }
+html{
+  scroll-behavior: smooth;
+}
 nav {
   color: var(--color);
   background-color: black;
