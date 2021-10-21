@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- LINK DE BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- ************************************************************************* -->
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,62 +33,69 @@
   </head>
   <body>
     <!--  Navegacion -->
-    <header>
+    <header id="home">
       <nav>
         <div class="flex blue">
           <div>
             <h2>Jonathan</h2>
           </div>
-          <div  class="menu">
+          <div class="menu">
             <i class="fas fa-bars" id="icono"></i>
           </div>
         </div>
         <div id="menu" class="invisible">
           <a href="#home">Home</a>
           <a href="#about">About</a>
-          <a href="">Service</a>
+          <a href="#education">Education</a>
           <a href="">Portafolio</a>
           <a href="#testimonials">Testimonials</a>
           <a href="#contact">contact</a>
         </div>
       </nav>
       <div class="header">
-        <div id="home" class="home">
-          <div class="grid">
-            <div class="width">
-              <h3>WELCOME TO MY RESUME</h3>
-              <h1>
-                <span>I'm </span>
-                <span>Jonathan Alvarado</span>
-              </h1>
-            </div>
-            <div class="skills">
-              <i class="fab fa-html5 bt-1"></i>
-              <i class="fab fa-css3-alt bt-2"></i>
-              <i class="fab fa-js-square bt-3"></i>
-            </div>
-            <div class="social-media">
-              <span>Follow Me:</span>
-              <a
-                href="https://www.facebook.com/profile.php?id=100008417165114"
-                target="blank"
-              >
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="" target="blank"><i class="fab fa-twitter"></i></a>
-              <a
-                href="https://www.instagram.com/jonathanalva92/?hl=es"
-                target="blank"
-                ><i class="fab fa-instagram" target="blank"></i
-              ></a>
-              <a
-                href="https://www.linkedin.com/in/jonathan-steveen-alvarado-chac%C3%B3n-91bb35128/"
-                target="blank"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-              <a href="https://github.com/joalvarado2" target="blank"
-                ><i class="fab fa-github"></i
-              ></a>
+        <div class="jumbotron jumbotron-fluid container">
+          <div class="container">
+            <span class="display-3">.</span>
+            <div class="lead">
+              <div class="home">
+                <div class="grid container">
+                  <div class="width">
+                    <h3>WELCOME TO MY RESUME</h3>
+                    <h1>
+                      <span>I'm </span>
+                      <span>Jonathan Alvarado</span>
+                    </h1>
+                  </div>
+                  <div class="skills">
+                    <i class="fab fa-html5 bt-1"></i>
+                    <i class="fab fa-css3-alt bt-2"></i>
+                    <i class="fab fa-js-square bt-3"></i>
+                  </div>
+                  <div class="social-media">
+                    <span>Follow Me:</span>
+                    <a
+                      href="https://www.facebook.com/profile.php?id=100008417165114"
+                      target="blank"
+                    >
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" target="blank"><i class="fab fa-twitter"></i></a>
+                    <a
+                      href="https://www.instagram.com/jonathanalva92/?hl=es"
+                      target="blank"
+                      ><i class="fab fa-instagram" target="blank"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/in/jonathan-steveen-alvarado-chac%C3%B3n-91bb35128/"
+                      target="blank"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                    <a href="https://github.com/joalvarado2" target="blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -103,32 +118,108 @@
             </p>
             <h5>Web Developer & Freelancer</h5>
           </div>
-
+          <!-- BARRAS DE PROGRESO -->
           <div class="bars">
             <div class="m-bar">
               <h5>HTML5</h5>
-              <progress class="width primary" value="70" max="100"></progress>
+              <div class="progress">
+                <div
+                  class="
+                    progress-bar progress-bar-striped progress-bar-animated
+                    bg-info
+                  "
+                  role="progressbar"
+                  aria-valuenow="75"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 60%"
+                ></div>
+              </div>
               <h5>CSS3</h5>
-              <progress class="width progress" value="70" max="100"></progress>
+              <div class="progress">
+                <div
+                  class="
+                    progress-bar progress-bar-striped progress-bar-animated
+                  "
+                  role="progressbar"
+                  aria-valuenow="75"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 60%"
+                ></div>
+              </div>
               <h5>JAVASCRITP</h5>
-              <progress class="width progress" value="50" max="100"></progress>
+              <div class="progress">
+                <div
+                  class="
+                    progress-bar progress-bar-striped progress-bar-animated
+                    bg-success
+                  "
+                  role="progressbar"
+                  aria-valuenow="75"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 55%"
+                ></div>
+              </div>
             </div>
             <div class="m-bar">
               <h5>REACJS</h5>
-              <progress class="width progress" value="40" max="100"></progress>
+              <div class="progress">
+                <div
+                  class="
+                    progress-bar progress-bar-striped progress-bar-animated
+                    bg-info
+                  "
+                  role="progressbar"
+                  aria-valuenow="75"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 40%"
+                ></div>
+              </div>
               <h5>JAVA</h5>
-              <progress class="width progress" value="40" max="100"></progress>
+              <div class="progress">
+                <div
+                  class="
+                    progress-bar progress-bar-striped progress-bar-animated
+                    bg-warning
+                  "
+                  role="progressbar"
+                  aria-valuenow="75"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 40%"
+                ></div>
+              </div>
               <h5>SQL</h5>
-              <progress class="width progress" value="30" max="100"></progress>
+              <div class="progress">
+                <div
+                  class="
+                    progress-bar progress-bar-striped progress-bar-animated
+                    bg-danger
+                  "
+                  role="progressbar"
+                  aria-valuenow="75"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 35%"
+                ></div>
+              </div>
             </div>
           </div>
-          <div class="button"><a href="/files/hoja_de_vida.pdf" download="Cv-jonathan.pdf">DOWNLOAD MY CV</a></div>
+          <!-- ****************************************************** -->
+          <div class="button">
+            <a href="/files/hoja_de_vida.pdf" download="Cv-jonathan.pdf"
+              >DOWNLOAD MY CV</a
+            >
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Work an Education -->
-    <section>
+    <section id="education">
       <div class="section">
         <div class="about-first">
           <div class="about">
@@ -220,7 +311,11 @@
             </div>
           </div>
 
-          <div class="button"><a href="/files/hoja_de_vida.pdf" download="Cv-jonathan.pdf">DOWNLOAD MY CV</a></div>
+          <div class="button">
+            <a href="/files/hoja_de_vida.pdf" download="Cv-jonathan.pdf"
+              >DOWNLOAD MY CV</a
+            >
+          </div>
         </div>
       </div>
     </section>
